@@ -1,0 +1,24 @@
+using System;
+
+namespace Lógica_programação_questão4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        // Escreva um algoritmo para ler o salário mensal atual de um funcionario e o percentual de reajuste. Calcule e escreva o valor do novo salário.
+
+        {
+            Console.WriteLine(" Qual valor do salário atual: ");
+            int Salario_atual;
+            Salario_atual = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Qual porcentagem do reajuste salárial: ");
+            int Reajuste;
+            Reajuste = int.Parse(Console.ReadLine());
+            Reajuste = Salario_atual * Reajuste / 100;
+            int Novo_Salario;
+            Novo_Salario = Salario_atual + Reajuste;
+            Console.WriteLine(" Novo Salário do funcionario será: " + Novo_Salario);
+
+        }
+    }
+}
