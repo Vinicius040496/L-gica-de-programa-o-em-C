@@ -1,0 +1,24 @@
+using System;
+
+namespace Logica_Programação_Questão3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine("Qual sua idade: ");
+            int idade;
+            idade = int.Parse (Console.ReadLine());
+            int meses;
+            meses = idade * 12;
+            Console.WriteLine(" Você possui: " + meses + (" Meses De vida "));
+            int dias;
+            dias = meses * 30;
+            Console.WriteLine(" Você possui: " + dias + (" Dias De vida "));
+          
+            Console.ReadLine();
+
+        }
+    }
+}
