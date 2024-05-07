@@ -6,7 +6,8 @@ namespace Logica_Programação_Questão3
     {
         static void Main(string[] args)
         {
-           
+           // escreva um algoritmo que leia idade de uma pessoa expressa em anos,meses e dias, e escreva a idade dessa pessoa expressa em dias.
+
             Console.WriteLine("Qual sua idade: ");
             int idade;
             idade = int.Parse (Console.ReadLine());
