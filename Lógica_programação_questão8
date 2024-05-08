@@ -1,0 +1,26 @@
+using System;
+
+namespace Lógica_programação_questão8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+
+        //Escreva um algoritmo que leia e escreva se o valor informado é maior, ou menor que 10
+
+        {
+            Console.WriteLine(" Escreva um valor :");
+            int valor = 10;
+            Console.ReadLine();
+            if (valor >= 10)
+            {
+                Console.WriteLine(" O valor é maior que 10 ");
+            }
+            else
+            {
+                Console.WriteLine(" O valor é menor que 10 ");
+            }
+
+        }
+    }
+}
