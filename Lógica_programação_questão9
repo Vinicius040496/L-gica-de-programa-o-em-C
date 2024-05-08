@@ -1,0 +1,28 @@
+using System;
+
+namespace Lógica_programação_questão9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        //Escreva um algoritmo que leia um valor e diga se é positivo ou negativo
+
+        {
+            Console.WriteLine(" Escreva um valor: ");
+            int Valor = 0;
+            Console.ReadLine();
+
+            if (Valor >= 0)
+            {
+                Console.WriteLine(" Valor é positivo! ");
+            }
+            else
+            {
+                Console.WriteLine(" Valor é negativo! ");
+            }
+
+        }
+    }
+}
+
+
