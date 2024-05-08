@@ -1,0 +1,32 @@
+using System;
+
+namespace Lógica_programação_questão11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        //Faça um algortimo que leia duas notas e calcule com base na média se foi aprovado ou reprovado. Considerando que a média é acima de 7.0
+
+        {
+            Console.WriteLine(" Escreva a primeira nota: ");
+            float Nota1 = 0;
+            Console.ReadLine();
+            Console.WriteLine(" Escreva a segunda nota: ");
+            float Nota2 = 0;
+            Console.ReadLine();
+            float Média;
+            Média = (Nota1 * Nota2) / 10;
+            float Resultado = Média;
+            Console.WriteLine(" A Médias das notas foi: " + Resultado);
+
+            if (Média >= 7)
+            {
+                Console.WriteLine(" Aluno aprovado! ");
+            }
+            else
+            {
+                Console.WriteLine(" Aluno reprovado! ");
+            }
+        }
+    }
+}
