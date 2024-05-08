@@ -1,0 +1,24 @@
+
+namespace Logica_Programação_Questão3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        // Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno.
+        // Considere que a média é poderada e que o peso das notas é 2, 3 e 5. formule o calculo.
+
+        {
+            Console.WriteLine(" Escreva a primeira nota: ");
+            float n1;
+            n1 = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Escreva a segunda nota: ");
+            float n2;
+            n2 = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Escreva a terceira nota: ");
+            float n3;
+            n3 = int.Parse(Console.ReadLine());
+            float Media;
+            Media = (n1 * 2) + (n2 * 3) + (n3 * 5);
+            float Resultado;
+            Resultado = Media / 10;
+            Console.WriteLine(" A media das provas foram: " + Resultado);
