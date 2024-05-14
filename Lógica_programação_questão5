@@ -5,20 +5,18 @@ namespace Lógica_programação_questão5
     internal class Program
     {
         static void Main(string[] args)
-        // Escreva um algoritmo para ler o salário mensal atual de um funcionario e o percentual de reajuste. Calcule e escreva o valor do novo salário.
-
         {
-            Console.WriteLine(" Qual valor do salário atual: ");
-            int Salario_atual;
-            Salario_atual = int.Parse(Console.ReadLine());
-            Console.WriteLine(" Qual porcentagem do reajuste salárial: ");
-            int Reajuste;
-            Reajuste = int.Parse(Console.ReadLine());
-            Reajuste = Salario_atual * Reajuste / 100;
-            int Novo_Salario;
-            Novo_Salario = Salario_atual + Reajuste;
-            Console.WriteLine(" Novo Salário do funcionario será: " + Novo_Salario);
+            Console.WriteLine("Qual é o valor do salário atual do funcionário:");
+            double Salario_atual = double.Parse(Console.ReadLine());
 
+            Console.WriteLine("Qual é o percentual de reajuste salarial:");
+            double Reajuste_percentual = double.Parse(Console.ReadLine());
+
+            double Reajuste = Salario_atual * (Reajuste_percentual / 100);
+            double Novo_Salario = Salario_atual + Reajuste;
+
+            Console.WriteLine("O novo salário do funcionário será: " + Novo_Salario.ToString("C")); // Usando "C" para formatar como moeda
         }
     }
 }
+
