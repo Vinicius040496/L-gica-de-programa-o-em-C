@@ -1,0 +1,21 @@
+using System;
+
+namespace Lógica_programação_questão11
+{
+    internal class Program
+    {
+        //Faça um algoritmo que leia 3 valores e ordene em ordem crescente
+        static void Main(string[] args)
+        {
+            int[] valores = new int[3] { 1303, 203, 330 };
+
+            Array.Sort(valores);
+
+            Console.WriteLine("Os valores em ordem crescente são:");
+            foreach (int valor in valores)
+            {
+                Console.WriteLine(valor);
+            }
+        }
+    }
+}
