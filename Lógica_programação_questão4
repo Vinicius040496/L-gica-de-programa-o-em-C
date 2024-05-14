@@ -1,32 +1,30 @@
+using System;
+
 namespace Lógica_programação_questão4
 {
     internal class Program
     {
         static void Main(string[] args)
-
-        // Escreva um algoritmo para ler o numero total de eleitores de um município, o numero de votos brancos,nulos e válidos.
-        // Calcule e escreva o percentual que cada um representa em relação ao total de eleitores.
-
         {
-            Console.WriteLine(" Qual valor total eleitores do munícipio: ");
-            int Eleitores;
-            Eleitores = int.Parse(Console.ReadLine());
-            Console.WriteLine(" Qual a quantidade de votos branco: ");
-            int Voto_Branco;
-            Voto_Branco = int.Parse(Console.ReadLine());
-            Console.WriteLine(" Qual a quantidade Votos Nulo");
-            int Voto_nulo;
-            Voto_nulo = int.Parse(Console.ReadLine());
+            Console.WriteLine("Qual é o número total de eleitores do município:");
+            int Eleitores = int.Parse(Console.ReadLine());
 
-            int V_validos;
-            V_validos = Eleitores - Voto_Branco - Voto_nulo;
-            Console.WriteLine(" A quantidade de votos validos no munícipio foi: " + V_validos + (" Pessoas"));
+            Console.WriteLine("Qual é a quantidade de votos brancos:");
+            int Voto_Branco = int.Parse(Console.ReadLine());
 
-            int pb = Voto_Branco * 100 / Eleitores;
-            int pn = Voto_nulo * 100 / Eleitores;
-            int pv = V_validos * 100 / Eleitores;
-            Console.WriteLine(" votos brancos " + pb + " %\n votos nulos " + Voto_nulo + " %\n  Votos validos" + pv + " %");
+            Console.WriteLine("Qual é a quantidade de votos nulos:");
+            int Voto_nulo = int.Parse(Console.ReadLine());
 
+            int V_validos = Eleitores - Voto_Branco - Voto_nulo;
+            Console.WriteLine("A quantidade de votos válidos no município é: " + V_validos + " Pessoas");
+
+            double pb = (double)Voto_Branco * 100 / Eleitores;
+            double pn = (double)Voto_nulo * 100 / Eleitores;
+            double pv = (double)V_validos * 100 / Eleitores;
+
+            Console.WriteLine("Percentual de votos brancos: " + pb.ToString("0.00") + " %");
+            Console.WriteLine("Percentual de votos nulos: " + pn.ToString("0.00") + " %");
+            Console.WriteLine("Percentual de votos válidos: " + pv.ToString("0.00") + " %");
         }
     }
 }
