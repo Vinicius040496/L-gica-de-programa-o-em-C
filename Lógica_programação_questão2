@@ -4,22 +4,19 @@ namespace Lógica_programação_questão2
 {
     internal class Program
     {
+        // // Escreva um algoritmo para ler as dimensões de um retangulo (base e altura) e calculule a sua área
         static void Main(string[] args)
         {
-            // Escreva um algoritmo para ler as dimensões de um retangulo (base e altura) e calculule a sua área
+            Console.WriteLine("Digite a Base do retângulo:");
+            int Base = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(" Digite Base: ");
-            int Base;
-            Base = int.Parse(Console.ReadLine());
-            Console.WriteLine(" Digite Altura: ");
-            int Altura;
-            Altura = int.Parse(Console.ReadLine());
-            int Retangulo = Base * Altura;
+            Console.WriteLine("Digite a Altura do retângulo:");
+            int Altura = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(" A área do retangulo corresponde: " + Retangulo);
+            int AreaRetangulo = Base * Altura;
+
+            Console.WriteLine("A área do retângulo é: " + AreaRetangulo);
             Console.ReadLine();
-
-
         }
     }
 }
