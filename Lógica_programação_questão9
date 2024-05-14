@@ -4,25 +4,23 @@ namespace Lógica_programação_questão9
 {
     internal class Program
     {
-        static void Main(string[] args)
         //Escreva um algoritmo que leia um valor e diga se é positivo ou negativo
-
+        static void Main(string[] args)
         {
-            Console.WriteLine(" Escreva um valor: ");
-            int Valor = 0;
-            Console.ReadLine();
+            Console.WriteLine("Escreva um valor:");
+            int Valor = int.Parse(Console.ReadLine());
 
             if (Valor >= 0)
             {
-                Console.WriteLine(" Valor é positivo! ");
+                Console.WriteLine("O valor é positivo!");
             }
-            else
+            else if (Valor < 0)
             {
-                Console.WriteLine(" Valor é negativo! ");
+                Console.WriteLine("O valor é negativo!");
             }
-
         }
     }
 }
+
 
 
