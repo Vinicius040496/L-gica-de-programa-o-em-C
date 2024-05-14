@@ -4,22 +4,20 @@ namespace Logica_Programação_Questão3
 {
     internal class Program
     {
+        //   // escreva um algoritmo que leia idade de uma pessoa expressa em anos,meses e dias, e escreva a idade dessa pessoa expressa em dias.
+
         static void Main(string[] args)
         {
-           // escreva um algoritmo que leia idade de uma pessoa expressa em anos,meses e dias, e escreva a idade dessa pessoa expressa em dias.
+            Console.WriteLine("Qual é a sua idade em anos: ");
+            int idadeAnos = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Qual sua idade: ");
-            int idade;
-            idade = int.Parse (Console.ReadLine());
-            int meses;
-            meses = idade * 12;
-            Console.WriteLine(" Você possui: " + meses + (" Meses De vida "));
-            int dias;
-            dias = meses * 30;
-            Console.WriteLine(" Você possui: " + dias + (" Dias De vida "));
-          
+            int meses = idadeAnos * 12;
+            Console.WriteLine("Você tem aproximadamente " + meses + " meses de vida.");
+
+            int dias = idadeAnos * 365; 
+            Console.WriteLine("Você tem aproximadamente " + dias + " dias de vida.");
+
             Console.ReadLine();
-
         }
     }
 }
