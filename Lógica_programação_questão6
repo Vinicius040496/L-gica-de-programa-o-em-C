@@ -1,29 +1,29 @@
+using System;
+
 namespace Lógica_programação_questão6
 {
     internal class Program
     {
         static void Main(string[] args)
-        // Uma revendedora de automóveis usados paga a seus funcionários vendedores um salário fixo por mês, mais uma comissao fix por cada carro vendido e mais 5% sobre o total de vendas da empresa.
-        // Escreva um algoritmo que leia o numero de carros vendidos, o valor total de vendas, o valor que o funcionário recebe por cada carro vendido e seu salario fixo.calcule o salario final do funcionário.
-
         {
-            Console.WriteLine(" Qual valor do Salario fixo do funcionario: ");
-            int Salario_Fixo;
-            Salario_Fixo = int.Parse(Console.ReadLine());
-            Console.WriteLine(" Quantos carros foram vendidos esse mês: ");
-            int Carros_Vendidos;
-            Carros_Vendidos = int.Parse(Console.ReadLine());
-            Console.WriteLine(" Qual a porcentagem comissão de venda cada carro: ");
-            int comissão;
-            comissão = int.Parse(Console.ReadLine());
-            Console.WriteLine(" Qual faturamento total da empressa esse mês: ");
-            int Total_vendas;
-            Total_vendas = int.Parse(Console.ReadLine());
-            int Resultado;
-            Resultado = Salario_Fixo + (Carros_Vendidos * comissão) + (Total_vendas * 5 / 100);
-            Console.WriteLine(" Salario final do funcionario: " + Resultado);
+            Console.WriteLine("Qual é o valor do salário fixo do funcionário:");
+            double Salario_Fixo = double.Parse(Console.ReadLine());
 
+            Console.WriteLine("Quantos carros foram vendidos este mês:");
+            int Carros_Vendidos = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Qual é a comissão por carro vendido:");
+            double Comissao_por_carro = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Qual é o faturamento total da empresa este mês:");
+            double Total_vendas = double.Parse(Console.ReadLine());
+
+            double Comissao_total_carros = Carros_Vendidos * Comissao_por_carro;
+            double Comissao_total_vendas = Total_vendas * 0.05;
+
+            double Salario_final = Salario_Fixo + Comissao_total_carros + Comissao_total_vendas;
+
+            Console.WriteLine("O salário final do funcionário é: " + Salario_final.ToString("C"));
         }
     }
 }
