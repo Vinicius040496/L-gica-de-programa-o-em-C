@@ -1,0 +1,30 @@
+using System;
+
+namespace ConsoleApp57
+{
+    internal class Program
+    {
+        //Faça um algoritmo para ler a quantidade maxima,minima e atual de um estoque. calcule a quantidade média entre os valores /2. Se a quantidade atual for maior ou igual a quantidade a quantidade maior escrever: efetuar compra, se estiver a baixa : efetuar compra
+        static void Main(string[] args)
+        {
+            int Quantidade_max, Quantidade_min, Quantidade_atual, media;
+            Console.WriteLine("Digite a quantidade máxima do estoque:");
+            Quantidade_max = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a quantidade mínima do estoque:");
+            Quantidade_min = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a quantidade atual do estoque:");
+            Quantidade_atual = int.Parse(Console.ReadLine());
+
+            media = (Quantidade_max + Quantidade_min) / 2;
+
+            if (Quantidade_atual >= media)
+            {
+                Console.WriteLine("A quantidade atual ({0}) está acima da média ({1}). Não é necessário efetuar compra.", Quantidade_atual, media);
+            }
+            else
+            {
+                Console.WriteLine("A quantidade atual ({0}) está abaixo da média ({1}). É necessário efetuar compra.", Quantidade_atual, media);
+            }
+        }
+    }
+}
