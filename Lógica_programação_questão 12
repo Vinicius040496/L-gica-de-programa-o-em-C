@@ -1,0 +1,36 @@
+using System;
+
+namespace ConsoleApp56
+{
+    internal class Program
+    {
+        //Faça um algoritmo para ler o número da conta do cliente, saldo,débito e crédito. Após calcular escreva o valor do saldo atual. Também testar se o saldo atual é posotivo ou negativo
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o número da sua conta:");
+            int numero_conta = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o saldo da conta:");
+            double saldo = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o débito da conta:");
+            double debito = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o crédito da conta:");
+            double credito = double.Parse(Console.ReadLine());
+
+            double saldo_atual = saldo - debito + credito;
+
+            Console.WriteLine("O saldo atual da conta é: R$" + saldo_atual);
+
+            if (saldo_atual >= 0)
+            {
+                Console.WriteLine("Saldo da conta: positivo");
+            }
+            else
+            {
+                Console.WriteLine("Saldo da conta: negativo");
+            }
+        }
+    }
+}
