@@ -4,24 +4,26 @@ namespace Lógica_programação_questão10
 {
     internal class Program
     {
-        static void Main(string[] args)
         //Faça um algoritmo que leia dois valores, e indique qual é maior
-
+        static void Main(string[] args)
         {
-            Console.WriteLine(" Escreva o primeiro valor: ");
-            int Valor1 = 0;
-            Console.ReadLine();
-            Console.WriteLine(" Escreva o segundo valor: ");
-            int Valor2 = 0;
-            Console.ReadLine();
+            Console.WriteLine("Escreva o primeiro valor:");
+            int Valor1 = int.Parse(Console.ReadLine());
 
-            if (Valor1 >= Valor2)
+            Console.WriteLine("Escreva o segundo valor:");
+            int Valor2 = int.Parse(Console.ReadLine());
+
+            if (Valor1 > Valor2)
             {
-                Console.WriteLine(" O primeiro valor é maior! ");
+                Console.WriteLine("O primeiro valor é maior!");
+            }
+            else if (Valor1 < Valor2)
+            {
+                Console.WriteLine("O segundo valor é maior!");
             }
             else
             {
-                Console.WriteLine(" O segundo valor é maior! ");
+                Console.WriteLine("Os valores são iguais!");
             }
         }
     }
