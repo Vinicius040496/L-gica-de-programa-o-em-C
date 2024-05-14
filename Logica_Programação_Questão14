@@ -1,0 +1,34 @@
+using System.Threading.Tasks;
+
+namespace Logica_Programação_Questão14
+{
+    //Faça um algoritmo que leia 3 valores e informe o maior
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int v1, v2, v3;
+            Console.WriteLine(" Digite o primeiro valor: ");
+            v1 = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Digite o segundo valor: ");
+            v2 = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Digite o terceiro valor: ");
+            v3 = int.Parse(Console.ReadLine());
+
+            if (v1 > v2 && v1 > v3)
+            {
+                Console.WriteLine(" Primeiro valor {0} é maior!", v1);
+            }
+            else if (v2 > v3 && v2 > v3)
+            {
+                Console.WriteLine(" Segundo valor {0} é maior!", v2);
+            }
+            else if (v3 > v1 && v3 > v2) {
+                Console.WriteLine(" terceiro valor {0} é maior!", v3);
+            } else 
+            {
+                Console.WriteLine(" Valores são iguais");
+            }
+        }
+    }
+}
