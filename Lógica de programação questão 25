@@ -1,0 +1,31 @@
+using System;
+
+namespace Lógica de programação questão 25
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double valor_mercadoria;
+            char opcao;
+
+            Console.WriteLine("Digite o valor da mercadoria: ");
+            valor_mercadoria = double.Parse(Console.ReadLine());
+            Console.WriteLine("A mercadoria selecionada custa R$ {0}", valor_mercadoria);
+            Console.WriteLine("Deseja comprar mais mercadoria ? (S/N)");
+            opcao = char.ToUpper(Console.ReadKey().KeyChar);
+
+            if (opcao == 'S')
+            {
+                int nova_quantidade;
+                Console.WriteLine("\nQual a nova quantidade de compra do produto ?");
+                nova_quantidade = int.Parse(Console.ReadLine());
+                Console.WriteLine("Nova quantidade do estoque é {0}", nova_quantidade);
+            }
+            else
+            {
+                Console.WriteLine("\nNão houve alteração no estoque!");
+            }
+        }
+    }
+}
