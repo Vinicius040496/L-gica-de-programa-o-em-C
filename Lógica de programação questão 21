@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lógica de programação questão 21
+{
+    internal class Program
+    {
+     //Faça um algoritmo que leia 10 valores, e imprima quais desses valores estão no intervalo entre 10-30. E imprima quais não fazem parte do intervalo passado
+        static void Main(string[] args)
+        {
+            int[] numero = new int[10];
+
+            Console.WriteLine("Digite primeiro valor:");
+            numero[0] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite segundo valor:");
+            numero[1] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite terceiro valor:");
+            numero[2] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite quarto valor:");
+            numero[3] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite quinto valor:");
+            numero[4] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite sexto valor:");
+            numero[5] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite setimo valor:");
+            numero[6] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite oitavo valor:");
+            numero[7] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite nono valor:");
+            numero[8] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite decimo valor:");
+            numero[9] = int.Parse(Console.ReadLine());
+
+            foreach (int res in numero)
+            {
+                if (res >= 10 && res <= 30)
+                {
+                    Console.WriteLine("{0} Esta no intervalo de numeros entre 10 e 30!",res);
+                }else
+                {
+                    Console.WriteLine("{0} Não faz parte do intervalo de numeros entre 10 e 30!",res);
+                }
+
+            }
+
+        }
+    }
+}
