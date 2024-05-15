@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lógica de promação 19
+{
+    internal class Program
+    {
+        //calcule um algoritmo que calcule e imprima a tabuada do numero 8 
+        static void Main(string[] args)
+        {
+            int[] tabuada = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            tabuada[0] = 0;
+            tabuada[1] = 8;
+            tabuada[2] = 16;
+            tabuada[3] = 24;
+            tabuada[4] = 32;
+            tabuada[5] = 40;
+            tabuada[6] = 48;
+            tabuada[7] = 56;
+            tabuada[8] = 64;
+            tabuada[9] = 72;
+            tabuada[10] = 80;
+            
+            foreach (int numeros in tabuada) 
+            {
+               Console.WriteLine(numeros);
+            }
+        }
+    }
+}
