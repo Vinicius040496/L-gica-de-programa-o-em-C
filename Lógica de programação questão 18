@@ -1,0 +1,18 @@
+using System;
+
+
+namespace Lógica de programação questão 18
+{
+    internal class Program
+    {
+        // Escreva um algoritmo para imprimir os valores de 1 a 20 em ordem decrescente.
+        static void Main(string[] args)
+        {
+            Console.WriteLine("A contagem em ordem decrescente fica:");
+            for (int contador = 20; contador >= 1; contador = contador -1)
+            {
+                Console.WriteLine(contador);
+            }
+        }
+    }
+}
