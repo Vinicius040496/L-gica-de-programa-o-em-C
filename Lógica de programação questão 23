@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lógica de programação questão 23
+{
+    internal class Program
+    {
+        // Faça um algoritimo que leia quantos alunos possui uma turma, e as notas finais de cada aluno.
+        static void Main(string[] args)
+        {
+            List<string> aluno = new List<string>();
+
+
+
+            int numero_alunos = aluno.Count;
+
+
+            aluno.Add("aluno1 nota 8");
+            aluno.Add("aluno2 nota 6");
+            aluno.Add("aluno3 nota 4");
+            aluno.Add("aluno4 nota 2");
+            aluno.Add("aluno5 nota 9");
+            aluno.Add("aluno6 nota 10");
+            aluno.Add("aluno7 nota 4");
+            aluno.Add("aluno8 nota 1");
+            aluno.Add("aluno9 nota 2");
+            aluno.Add("aluno10 nota 3");
+
+            foreach (string notas in aluno)
+            {
+                Console.WriteLine(notas);
+            }
+        }  
+        }
+    }
+
