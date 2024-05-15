@@ -1,0 +1,28 @@
+using System;
+
+namespace Lógica de programação 19
+{
+    internal class Program
+    {
+        // Faça um algoritmo que leia um valor digitado pelo usuário e imprima valores inteiros entre 1 até o valor digitado pelo usuário, considerando que o valor digitado pelo usuário seja maior que 0.
+        static void Main(string[] args)
+        {
+            int v1;
+            Console.WriteLine("Digite o valor inicial da contagem: ");
+            v1 = int.Parse(Console.ReadLine());
+
+            if (v1 <= 0)
+            {
+                Console.WriteLine("Valor inválido para o cálculo. O valor precisa ser positivo!");
+            }
+            else
+            {
+                Console.WriteLine("A contagem entre 1 e {0} é:", v1);
+                for (int contador = 1; contador <= v1; contador++)
+                {
+                    Console.Write(contador + " ");
+                }
+            }
+        }
+    }
+}
