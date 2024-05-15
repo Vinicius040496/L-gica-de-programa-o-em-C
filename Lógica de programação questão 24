@@ -1,0 +1,24 @@
+using System;
+
+namespace Lógica de programação questão 24
+{
+    internal class Program
+    {
+        // Uma loja está levantando o valor total de suas mercarias no estoque. Escreve um algoritmo que permita a entrada dos valores, quantidade do estoque, e preço das mercadorias. calcule o valor estimado do estoque da loja
+        static void Main(string[] args)
+        {
+            int Mercadorias_Atual;
+            double Valor_Mercadoria, Média;
+
+            Console.WriteLine("Digite a quantidade atual de mercadorias no estoque: ");
+            Mercadorias_Atual = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor de cada mercadoria: ");
+            Valor_Mercadoria = double.Parse(Console.ReadLine());
+
+            Média = Mercadorias_Atual * Valor_Mercadoria;
+
+            Console.WriteLine("O valor estimado em mercadorias no estoque é: R${0} Reais", Média);
+        }
+    }
+}
